@@ -1,0 +1,15 @@
+@charset "utf-8";
+body{
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(108, 108, 131);
+    /*
+    MEDIDAS ABSOLUTAS
+    cm, mm, in(polegadas), px (pixel), pt(ponto), pc(paica)
+
+    MEDIDAS RELATIVAS
+    em(rlativo ao m), ex(relativo a altura de x), rem, vw,vh, %
+    16 px é o padrão nos navegadores(recomendação para usar px)
+    16 px geralmente = 1 em  
+    */
+    font-size: 1em;
+}
