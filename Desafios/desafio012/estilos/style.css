@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10vw;
+}
+
+section#joaninha{
+    background-image: url("imagens/background001.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 3px;
+    text-align: center;
+
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
