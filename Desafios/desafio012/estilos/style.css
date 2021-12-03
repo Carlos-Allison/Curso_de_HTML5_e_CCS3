@@ -1,32 +1,76 @@
 @charset "utf-8";
 
+/*Configurações gerais*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Configurações de HTML e BODY*/
+
+html, body{
+    background-color: darkgray;
+    min-height: 100vh ;
+}
+
+/*Configuração do header(cabeçalho)*/
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+header > h1{
+    padding-top : 50px;
+    font-variant: small-caps;
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+/*Configurações gerais dos links*/
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10vw;
 }
 
-section#joaninha{
-    background-image: url("imagens/background001.jpg");
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: cover;
-    background-attachment: fixed;
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
 }
 
-header a{
-    text-decoration: none;
+section.normal{
+    background-color: white;
     color: black;
-    font-weight: bold;
+
 }
+
+section.imagem{
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+section.imagem > p{
+    background-color: black;
+    width: 500px;
+}
+
+/*Rodapé da página*/
 footer{
     background-color: black;
     color: white;
-    padding: 3px;
+    padding: 10px;
     text-align: center;
-
-}
-footer a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+    
 }
