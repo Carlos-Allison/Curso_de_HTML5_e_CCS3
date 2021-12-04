@@ -1,5 +1,18 @@
 @charset "utf-8";
 
+/* Fontes importadas */
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+/*Variáveis de fontes*/
+:root{
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: 'Sriracha', cursive;
+    --fonte03:'Patrick Hand', cursive;
+}
+
+
 /*Configurações gerais*/
 
 *{
@@ -11,7 +24,8 @@
 
 html, body{
     background-color: darkgray;
-    min-height: 100vh ;
+    min-height: 100vh;
+    font-family: var(--fonte01);
 }
 
 /*Configuração do header(cabeçalho)*/
@@ -25,6 +39,8 @@ header{
 header > h1{
     padding-top : 50px;
     font-variant: small-caps;
+    font-family: var(--fonte03);
+    font-size: 10vw;
 }
 
 header > p{
@@ -38,16 +54,15 @@ a{
     font-weight: bold;
 }
 
-h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10vw;
-}
+
 
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte02);
+    font-size: 3vw;
 }
 
 section.normal{
@@ -59,18 +74,24 @@ section.normal{
 section.imagem{
     background-color: rgb(32, 32, 32);
     color: white;
+    
 }
 
 section.imagem > p{
     background-color: black;
-    width: 500px;
+    display: inline-block;
+    padding: 5px;
 }
 
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
 /*Rodapé da página*/
 footer{
     background-color: black;
     color: white;
     padding: 10px;
     text-align: center;
-    
+
 }
