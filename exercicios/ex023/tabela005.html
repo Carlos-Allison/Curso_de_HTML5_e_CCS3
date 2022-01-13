@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando colunas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .nome{
+            background-color: blue;
+        }
+        
+        .grupo{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup> <!-- Criação de uma única marcação para todas as colunas -->
+        <col class="nome">       
+        <col class="grupo" span="2"> <!-- utilização de um span para criação de um grupo de 3 colunas -->
+        <col class="prof">
+        </colgroup>
+        <caption>CADASTRO</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>Feminino</td>
+            <td>30</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Carlos Allison</td>
+            <td>Masculino</td>
+            <td>20</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Ana Carolina</td>
+            <td>Feminina</td>
+            <td>26</td>
+            <td>Chefe de cozinha</td>
+        </tr>
+    
+        
+    </table>
+</body>
+</html>
