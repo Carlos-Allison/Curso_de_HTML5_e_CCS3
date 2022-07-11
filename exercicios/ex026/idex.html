@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe{
+            width: 95vw;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <!-- Tamanho padrão do iframe 300x150 pixels-->
+    <p>Acessando o site do 
+        <iframe src="https://www.cursoemvideo.com/" frameborder="1", height="500", width="500"></iframe>
+        para aprender a programar.</p>
+    <!-- Alguns site não permitem sua exibição em iframes -->
+    <p>
+        Alguns sites não permitem serem exibidos em iframes, por exemplo:
+        o <iframe src="https://www.google.com.b" frameborder="0",height="400" ,width="400",></iframe>
+    </p>
+    <p>
+        Acessando o meu github: <iframe src="https://github.com/Carlos-Allison" frameborder="0"></iframe>
+    </p>
+
+    <p>Coloando os nossos sites em iframes:
+        <iframe src="pag01.html" frameborder="1", height="500", width="600"></iframe>
+    </p>
+<!-- iframes dinâmicos:
+colocamos o target nos links para identificar qual iframe ele se revere-se-->
+    <p>
+        Colocando opções de páginas no iframe.
+    </p>
+    <p>Opções: <br>
+    <ul>
+        <li><a href="páginas_extras/pag01.html"target = "frame">Primeira página</a></li>
+        <li><a href="páginas_extras/pag02.html"target = "frame">Segunda página</a></li>
+        <li><a href="páginas_extras/pag03.html"target = "frame">Terceira página</a></li>
+    </ul></p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit et ipsam perferendis fuga fugiat aliquid inventore ea sapiente obcaecati, totam nam nobis culpa incidunt impedit accusamus, ipsa id neque.</p>
+<!-- Devemos colocar o parâmetro name para fazer o iframe ficar dinâmico-->
+    <iframe src="" name="frame" height="500"></iframe>
+</body>
+</html>
